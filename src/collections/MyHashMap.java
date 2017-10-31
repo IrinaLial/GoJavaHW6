@@ -9,11 +9,14 @@ public class MyHashMap <K,V> {
             node = new HMNode <> ( key , value , null );
             size++;
         } else {
-            this.node = new HMNode <> ( key , value , this.node );
-            size++;
+            if ( this.get ( key ) != null ) {
+                System.out.println ( "Key is already used!" );
+            } else {
+                this.node = new HMNode <> ( key , value , this.node );
+                size++;
+            }
         }
     }
-
     public void clear ( ) {
         for ( HMNode <K, V> n = node ; n != null ; ) {
             HMNode <K, V> next = n.prev;
