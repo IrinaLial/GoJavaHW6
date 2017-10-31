@@ -17,13 +17,13 @@ public class Main {
         addOneToAll ( );
         showAll ( );
         showElement ( );
+        showAll ( );
         removeElement ( );
         showAll ( );
         popAndPoll ( );
         showAll ( );
         clearAll ( );
         showAll ( );
-        addOneToAll ( );
         addOneToAll ( );
         showAll ( );
     }
